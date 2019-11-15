@@ -120,7 +120,8 @@ html {
 html,
 body {
   font-family: 'Raleway', sans-serif;
-  color: #128494;
+  color: SeaShell;
+  background-color: SeaGreen;
 }
 h1,
 h2,
