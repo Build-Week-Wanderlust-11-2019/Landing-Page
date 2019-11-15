@@ -7,15 +7,6 @@ html {
 html,
 body {
   font-family: 'Raleway', sans-serif;
-  color: SeaShell;
-  background-color: SeaGreen;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: 3.8rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -31,14 +22,4 @@ p {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-}
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-}
-@media (max-width:500px) {
-  .team {
-    width: 80%;
-  }
 }
