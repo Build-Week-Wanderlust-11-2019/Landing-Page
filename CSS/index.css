@@ -1,116 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
 html,
 body {
-  border: 0;
-  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-div,
-span,
-object,
-iframe,
-img,
-table,
-caption,
-thead,
-tbody,
-tfoot,
-tr,
-tr,
-td,
-article,
-aside,
-canvas,
-details,
-figure,
-hgroup,
-menu,
-nav,
-footer,
-header,
-section,
-summary,
-mark,
-audio,
-video {
-  border: 0;
-  margin: 0;
-  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: SeaShell;
+  background-color: SeaGreen;
 }
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-address,
-cit,
-code,
-del,
-dfn,
-em,
-ins,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-b,
-i,
-hr,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-legend,
-label {
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
+h5 {
+  font-size: 3.8rem;
 }
-article,
-aside,
-canvas,
-figure,
-figure img,
-figcaption,
-hgroup,
-footer,
-header,
-nav,
-section,
-audio,
-video {
-  display: block;
+h2 {
+  font-size: 3.2rem;
 }
-table {
-  border-collapse: separate;
-  border-spacing: 0;
+h3 {
+  font-size: 2.8rem;
 }
-table caption,
-table th,
-table td {
-  text-align: left;
-  vertical-align: middle;
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
-a img {
-  border: 0;
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
-:focus {
-  outline: 0;
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
 }
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -212,3 +139,9 @@ p {
 .home-container .container .about div p {
   text-align: center;
 }
+=======
+@media (max-width:500px) {
+  .team {
+    width: 80%;
+  }
+>>>>>>> d4ab103f3fef1ae28719f3680e9d42432f9ca2ed
