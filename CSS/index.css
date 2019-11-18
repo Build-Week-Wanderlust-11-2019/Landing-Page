@@ -118,16 +118,16 @@ html,
 body {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
-  color: SeaShell;
-  background-color: SeaGreen;
+  color: rgba(255, 249, 249, 0.856);
+  background-color: #489c27;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  text-decoration: none;
-  color: #00b7c2;
+  color: #489c27;
+  font-weight: 400;
 }
 h1 {
   font-size: 3.6rem;
@@ -191,7 +191,6 @@ p {
 }
 .home-container .container .about div {
   width: 80%;
-  background-color: SeaShell;
   border-radius: 10px;
 }
 .home-container .container .about div h1 {
@@ -222,10 +221,10 @@ p {
 nav {
   display: flex;
   justify-content: center;
-  color: #128494;
+  color: #2dd1ee;
 }
 nav a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 20px;
 }
