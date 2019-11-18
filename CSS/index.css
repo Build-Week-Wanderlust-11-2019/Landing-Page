@@ -37,7 +37,121 @@ p {
   flex-wrap: wrap;
   width: 80%;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  color: SeaShell;
+  background-color: SeaGreen;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #00b7c2;
+}
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+=======
+>>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
+.home-container {
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.home-container .container header nav {
+  color: #128494;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.home-container .container header nav a {
+  padding: 0 2%;
+}
+.home-container .container header h1 {
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+  font-size: 7rem;
+}
+.home-container .container header h2 {
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+  font-size: 3.5rem;
+}
+.home-container .container .pitch {
+  text-shadow: 2px 2px 3px black;
+  margin-bottom: 20%;
+  margin-top: 10%;
+  text-align: center;
+}
+.home-container .container .pitch h1 {
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+.home-container .container .pitch p {
+  text-shadow: 1px 1px 1px black;
+}
+.home-container .container .about {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+.home-container .container .about div {
+  width: 80%;
+  background-color: SeaShell;
+  border-radius: 10px;
+}
+.home-container .container .about div h1 {
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+}
+.home-container .container .about div img {
+  border-radius: 15px;
+  border: 1px solid black;
+  display: block;
+  margin: 2% auto;
+  width: 90%;
+  height: auto;
+}
+.home-container .container .about div p {
+  text-align: center;
+}
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
 @media (max-width:500px) {
   .team {
     width: 80%;
   }
+<<<<<<< HEAD
+>>>>>>> d4ab103f3fef1ae28719f3680e9d42432f9ca2ed
+=======
+>>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
