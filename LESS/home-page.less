@@ -1,15 +1,13 @@
 .home-container {
     background: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, .5)), url(../images/hero.jpg);
-    
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
         .container {
                 header {
-                    
                         nav {
-                            color: @slate-blue;
                             margin-bottom: 5%;
                             text-align: center;
                             font-size: 1.6rem;
@@ -17,7 +15,6 @@
                                     padding: 0 2%;
                                 }
                         }
-
                         h1 {
                             .text-shadow();
                             text-align: center;
@@ -74,9 +71,17 @@
                                     text-align: center;
                                 }
                         }
-                    
+
                 }
 
-               
+
         }
+    }//End of Homepage
+.team{ //About Page
+    display:flex;
+    flex-wrap: wrap;
+    width: 80%;
+    @media @mobile{
+        width:80%;
     }
+}

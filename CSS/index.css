@@ -1,11 +1,122 @@
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-}
 html,
 body {
+  font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
   color: SeaShell;
   background-color: SeaGreen;
@@ -15,48 +126,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-size: 3.8rem;
-}
-h2 {
-  font-size: 3.2rem;
-}
-h3 {
-  font-size: 2.8rem;
-}
-p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  font-family: 'Raleway', sans-serif;
-  color: SeaShell;
-  background-color: SeaGreen;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Russo One', sans-serif;
+  text-decoration: none;
   color: #00b7c2;
 }
 h1 {
@@ -77,8 +147,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-=======
->>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
 .home-container {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
   background-size: cover;
@@ -86,7 +154,6 @@ p {
   background-attachment: fixed;
 }
 .home-container .container header nav {
-  color: #128494;
   margin-bottom: 5%;
   text-align: center;
   font-size: 1.6rem;
@@ -142,16 +209,23 @@ p {
 .home-container .container .about div p {
   text-align: center;
 }
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
 @media (max-width:500px) {
   .team {
     width: 80%;
   }
-<<<<<<< HEAD
->>>>>>> d4ab103f3fef1ae28719f3680e9d42432f9ca2ed
-=======
->>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
+}
+nav {
+  display: flex;
+  justify-content: center;
+  color: #128494;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 20px;
+}
