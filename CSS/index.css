@@ -38,6 +38,7 @@ p {
   width: 80%;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -76,6 +77,8 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+=======
+>>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
 .home-container {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
   background-size: cover;
@@ -139,9 +142,16 @@ p {
 .home-container .container .about div p {
   text-align: center;
 }
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
 @media (max-width:500px) {
   .team {
     width: 80%;
   }
+<<<<<<< HEAD
 >>>>>>> d4ab103f3fef1ae28719f3680e9d42432f9ca2ed
+=======
+>>>>>>> 874cf8a1decc4416fbb5b502fdabb1c628131ac0
