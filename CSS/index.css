@@ -172,6 +172,10 @@ p {
   font-size: 3.5rem;
 }
 .home-container .container .pitch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   text-shadow: 2px 2px 3px black;
   margin-bottom: 20%;
   margin-top: 10%;
@@ -186,10 +190,16 @@ p {
 }
 .home-container .container .about {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-content: center;
   padding-bottom: 10%;
 }
 .home-container .container .about div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   width: 80%;
   border-radius: 10px;
 }

@@ -29,6 +29,7 @@
                 }
 
                 .pitch {
+                    .flex-box(column, center, center);
                     .text-shadow();
                     margin-bottom: 20%;
                     margin-top: 10%;
@@ -44,11 +45,11 @@
                 }
 
                 .about {
-                    display: flex;
-                    justify-content: center;
+                    .flex-box(row, center, center);
                     padding-bottom: 10%;
 
                         div {
+                            .flex-box(column, center, center);
                             width: 80%;
                             border-radius: 10px;
                                 h1 {
