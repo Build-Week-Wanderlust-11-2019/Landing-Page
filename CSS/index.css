@@ -162,17 +162,38 @@ p {
   padding: 0 2%;
 }
 .home-container .container header h1 {
-  text-shadow: 2px 2px 3px black;
   text-align: center;
   font-size: 7rem;
 }
+@media (min-width:320px) {
+  .home-container .container header h1 {
+    font-size: 5rem;
+  }
+}
+@media (min-width:800px) {
+  .home-container .container header h1 {
+    font-size: 8rem;
+  }
+}
 .home-container .container header h2 {
-  text-shadow: 2px 2px 3px black;
   text-align: center;
   font-size: 3.5rem;
 }
+@media (min-width:320px) {
+  .home-container .container header h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width:800px) {
+  .home-container .container header h2 {
+    font-size: 5rem;
+  }
+}
 .home-container .container .pitch {
-  text-shadow: 2px 2px 3px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   margin-bottom: 20%;
   margin-top: 10%;
   text-align: center;
@@ -181,21 +202,47 @@ p {
   font-size: 3rem;
   margin-bottom: 2%;
 }
+@media (min-width:800px) {
+  .home-container .container .pitch h1 {
+    font-size: 4rem;
+  }
+}
 .home-container .container .pitch p {
-  text-shadow: 1px 1px 1px black;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (min-width:800px) {
+  .home-container .container .pitch p {
+    font-size: 2rem;
+  }
 }
 .home-container .container .about {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-content: center;
   padding-bottom: 10%;
 }
 .home-container .container .about div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   width: 80%;
   border-radius: 10px;
 }
 .home-container .container .about div h1 {
   text-align: center;
-  text-shadow: 2px 2px 3px black;
+}
+@media (min-width:320px) {
+  .home-container .container .about div h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width:800px) {
+  .home-container .container .about div h1 {
+    font-size: 4rem;
+  }
 }
 .home-container .container .about div img {
   border-radius: 15px;
@@ -206,14 +253,21 @@ p {
   height: auto;
 }
 .home-container .container .about div p {
+  margin: 2% auto;
   text-align: center;
+  width: 90%;
+}
+@media (min-width:800px) {
+  .home-container .container .about div p {
+    font-size: 2rem;
+  }
 }
 .team {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
 }
-@media (max-width:500px) {
+@media (min-width:400px) {
   .team {
     width: 80%;
   }

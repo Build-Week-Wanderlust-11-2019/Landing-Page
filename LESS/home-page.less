@@ -16,44 +16,67 @@
                                 }
                         }
                         h1 {
-                            .text-shadow();
                             text-align: center;
                             font-size: 7rem;
+                                @media @mobile-small {
+                                    font-size: 5rem;
+                                }
+                                @media @tablet {
+                                    font-size: 8rem;
+                                }
                         }
 
                         h2 {
-                            .text-shadow();
                             text-align: center;
                             font-size: 3.5rem;
+                                @media @mobile-small {
+                                    font-size: 3rem;
+                                }
+                                @media @tablet {
+                                    font-size: 5rem;
+                                }
                         }
                 }
 
                 .pitch {
-                    .text-shadow();
+                    .flex-box(column, center, center);
                     margin-bottom: 20%;
                     margin-top: 10%;
                     text-align: center;
                      h1 {
                          font-size: 3rem;
                          margin-bottom: 2%;
+                            @media @tablet {
+                                font-size: 4rem;
+                            }
                      }
 
                      p {
-                         text-shadow: 1px 1px 1px black;
+                         width: 80%;
+                         margin: 0 auto;
+                            @media @tablet {
+                                font-size: 2rem;
+                            }
                      }
+
                 }
 
                 .about {
-                    display: flex;
-                    justify-content: center;
+                    .flex-box(row, center, center);
                     padding-bottom: 10%;
 
                         div {
+                            .flex-box(column, center, center);
                             width: 80%;
                             border-radius: 10px;
                                 h1 {
                                     text-align: center;
-                                    .text-shadow();
+                                        @media @mobile-small {
+                                            font-size: 3rem;
+                                        }
+                                        @media @tablet {
+                                            font-size: 4rem;
+                                        }
                                 }
 
                                 img {
@@ -66,7 +89,12 @@
                                 }
 
                                 p {
+                                    margin: 2% auto;
                                     text-align: center;
+                                    width: 90%;
+                                    @media @tablet {
+                                        font-size: 2rem;
+                                    }
                                 }
                         }
 
@@ -75,7 +103,9 @@
 
         }
     }//End of Homepage
-.team{ //About Page
+
+//About Page
+.team {
     display:flex;
     flex-wrap: wrap;
     width: 80%;
