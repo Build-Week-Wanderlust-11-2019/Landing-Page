@@ -1,116 +1,56 @@
-html,
-body {
-  border: 0;
-  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
+a:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
-div,
-span,
-object,
-iframe,
-img,
-table,
-caption,
-thead,
-tbody,
-tfoot,
-tr,
-tr,
-td,
-article,
-aside,
-canvas,
-details,
-figure,
-hgroup,
-menu,
-nav,
-footer,
-header,
-section,
-summary,
-mark,
-audio,
-video {
+/*html, body {
+	border: 0;
+	font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+div, span, object, iframe, img, table, caption, thead, tbody,
+tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu,
+nav, footer, header, section, summary, mark, audio, video {
   border: 0;
   margin: 0;
   padding: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-address,
-cit,
-code,
-del,
-dfn,
-em,
-ins,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-b,
-i,
-hr,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-legend,
-label {
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+ol, ul, li, fieldset, legend, label {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
   margin: 0;
   padding: 0;
 }
-article,
-aside,
-canvas,
-figure,
-figure img,
-figcaption,
-hgroup,
-footer,
-header,
-nav,
-section,
-audio,
-video {
-  display: block;
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
 }
+
 table {
   border-collapse: separate;
   border-spacing: 0;
+  caption, th, td {
+    text-align: left;
+    vertical-align: middle;
+  }
 }
-table caption,
-table th,
-table td {
-  text-align: left;
-  vertical-align: middle;
-}
+
 a img {
   border: 0;
 }
+
 :focus {
   outline: 0;
 }
+*/
 * {
   box-sizing: border-box;
 }
@@ -120,6 +60,10 @@ body {
   font-family: 'Raleway', sans-serif;
   color: rgba(255, 249, 249, 0.856);
   background-color: #489c27;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 h1,
 h2,
@@ -146,12 +90,6 @@ p {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-}
-.home-container {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 .home-container .container header nav {
   margin-bottom: 5%;
@@ -264,13 +202,19 @@ p {
 }
 .team {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 10%;
   width: 80%;
+  border-radius: 10px;
 }
-@media (min-width:400px) {
-  .team {
-    width: 80%;
-  }
+.team img {
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 2% auto;
+  width: 20%;
+  height: auto;
 }
 nav {
   display: flex;
@@ -281,4 +225,9 @@ nav a {
   text-decoration: none;
   font-size: 2rem;
   padding: 20px;
+}
+nav a a:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }

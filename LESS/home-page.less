@@ -1,115 +1,106 @@
 .home-container {
-    background: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, .5)), url(../images/hero.jpg);
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-        .container {
-                header {
-                        nav {
-                            margin-bottom: 5%;
-                            text-align: center;
-                            font-size: 1.6rem;
-                                a {
-                                    padding: 0 2%;
-                                }
+    .container {
+            header {
+                nav {
+                    margin-bottom: 5%;
+                    text-align: center;
+                    font-size: 1.6rem;
+                    a {
+                            padding: 0 2%;
+                    }//a
+                }//nav
+                h1 {
+                    text-align: center;
+                    font-size: 7rem;
+                        @media @mobile-small {
+                            font-size: 5rem;
                         }
+                        @media @tablet {
+                            font-size: 8rem;
+                        }
+                }//H1
+                h2 {
+                    text-align: center;
+                    font-size: 3.5rem;
+                        @media @mobile-small {
+                            font-size: 3rem;
+                        }
+                        @media @tablet {
+                            font-size: 5rem;
+                        }
+                }//H2
+            }//Header
+            .pitch {
+                .flex-box(column, center, center);
+                margin-bottom: 20%;
+                margin-top: 10%;
+                text-align: center;
+                h1 {
+                    font-size: 3rem;
+                    margin-bottom: 2%;
+                    @media @tablet {
+                        font-size: 4rem;
+                    }
+                }//H1
+                p {
+                    width: 80%;
+                    margin: 0 auto;
+                    @media @tablet {
+                        font-size: 2rem;
+                    }
+                }//p
+        }//pitch
+        .about {
+            .flex-box(row, center, center);
+            padding-bottom: 10%;
+
+                div {
+                    .flex-box(column, center, center);
+                    width: 80%;
+                    border-radius: 10px;
                         h1 {
                             text-align: center;
-                            font-size: 7rem;
-                                @media @mobile-small {
-                                    font-size: 5rem;
-                                }
-                                @media @tablet {
-                                    font-size: 8rem;
-                                }
-                        }
-
-                        h2 {
-                            text-align: center;
-                            font-size: 3.5rem;
                                 @media @mobile-small {
                                     font-size: 3rem;
                                 }
                                 @media @tablet {
-                                    font-size: 5rem;
+                                    font-size: 4rem;
                                 }
                         }
-                }
 
-                .pitch {
-                    .flex-box(column, center, center);
-                    margin-bottom: 20%;
-                    margin-top: 10%;
-                    text-align: center;
-                     h1 {
-                         font-size: 3rem;
-                         margin-bottom: 2%;
-                            @media @tablet {
-                                font-size: 4rem;
-                            }
-                     }
+                        img {
+                            border-radius: 15px;
+                            border: 1px solid black;
+                            display: block;
+                            margin: 2% auto;
+                            width: 90%;
+                            height: auto;
+                        }
 
-                     p {
-                         width: 80%;
-                         margin: 0 auto;
+                        p {
+                            margin: 2% auto;
+                            text-align: center;
+                            width: 90%;
                             @media @tablet {
                                 font-size: 2rem;
                             }
-                     }
-
-                }
-
-                .about {
-                    .flex-box(row, center, center);
-                    padding-bottom: 10%;
-
-                        div {
-                            .flex-box(column, center, center);
-                            width: 80%;
-                            border-radius: 10px;
-                                h1 {
-                                    text-align: center;
-                                        @media @mobile-small {
-                                            font-size: 3rem;
-                                        }
-                                        @media @tablet {
-                                            font-size: 4rem;
-                                        }
-                                }
-
-                                img {
-                                    border-radius: 15px;
-                                    border: 1px solid black;
-                                    display: block;
-                                    margin: 2% auto;
-                                    width: 90%;
-                                    height: auto;
-                                }
-
-                                p {
-                                    margin: 2% auto;
-                                    text-align: center;
-                                    width: 90%;
-                                    @media @tablet {
-                                        font-size: 2rem;
-                                    }
-                                }
                         }
-
                 }
-
 
         }
-    }//End of Homepage
 
-//About Page
-.team {
-    display:flex;
-    flex-wrap: wrap;
+     }//Container
+}//Homepage
+.team{
+    .flex-box(row, center, center);
+    padding-bottom: 10%;
     width: 80%;
-    @media @mobile{
-        width:80%;
-    }
-}
+    border-radius: 10px;
+    img {
+        border-radius: 15px;
+        border: 1px solid black;
+        margin: 2% auto;
+        width: 20%;
+        height: auto;
+    }//img
+}//Team Page
