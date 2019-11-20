@@ -147,6 +147,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.container footer {
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
 .home-container {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
   background-size: cover;
