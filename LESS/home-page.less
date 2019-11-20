@@ -92,16 +92,77 @@
 
      }//Container
 }//Homepage
-.team{
-    .flex-box(row, center, center);
+
+h1 {
+    text-align: center;
+}
+.team {
+    .flex-box(column, center, center);
+    margin: 0 auto;
     padding-bottom: 10%;
     width: 80%;
     border-radius: 10px;
-    img {
-        border-radius: 15px;
-        border: 1px solid black;
-        margin: 2% auto;
-        width: 20%;
-        height: auto;
-    }//img
+
+        .person {
+            .flex-box(column, center, center);
+            
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                width: 60%;
+                margin: 0 auto;
+                padding-bottom: 7%;
+            }
+
+            img {
+                border-radius: 15px;
+                border: 1px solid black;
+                margin: 2% auto;
+                width: 60%;
+                height: auto;
+            }
+
+        }//person
+
+    
 }//Team Page
+
+.form {
+    margin-bottom: 10%;
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    form {
+        width: 50%;
+        margin: 0 auto;
+        .fields {
+            .flex-box(column, center, center);
+            text-align: center;
+            label {
+                display: block;
+                font-size: 2rem;
+                margin-bottom: 5%;
+            }
+            input[type=text], input[type=email] {
+                width: 70%;
+                margin-bottom: 10%;
+                    
+            }
+
+            #name, #email, #message {
+                border: 1px solid black;
+            }
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+    }
+}
