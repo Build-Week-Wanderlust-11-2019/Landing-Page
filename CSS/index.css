@@ -59,8 +59,9 @@ html,
 body {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
-  color: rgba(255, 249, 249, 0.856);
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  color: rgba(255, 249, 249);
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/forest.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -70,136 +71,97 @@ h2,
 h3,
 h4,
 h5 {
-  color: #108dd5;
-  font-weight: 400;
+  color: #8ed0ebd7;
 }
-h1 {
-  font-size: 3.6rem;
+@media (min-width:800px) {
+  h1 {
+    font-size: 6rem;
+    font-weight: 600;
+  }
 }
-h2 {
-  font-size: 3.2rem;
+@media (min-width:800px) {
+  h2 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
 }
-h3 {
-  font-size: 2.8rem;
+@media (min-width:800px) {
+  h3 {
+    font-size: 3.2rem;
+  }
 }
-p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+@media (min-width:800px) {
+  p {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
 }
 footer {
+  height: 200px;
   font-size: 2rem;
-  margin: 0 auto;
-  text-align: center;
-}
-.home-container .container header nav {
-  margin-bottom: 5%;
-  text-align: center;
-  font-size: 1.6rem;
-}
-.home-container .container header nav a {
-  padding: 0 2%;
-}
-.home-container .container header h1 {
-  text-align: center;
-  font-size: 7rem;
-}
-@media (min-width:800px) {
-  .home-container .container header h1 {
-    font-size: 8rem;
-  }
-}
-.home-container .container header h2 {
-  text-align: center;
-  font-size: 3.5rem;
-}
-@media (min-width:800px) {
-  .home-container .container header h2 {
-    font-size: 5rem;
-  }
-}
-.home-container .container .pitch {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 20%;
-  margin-top: 10%;
-  text-align: center;
-}
-.home-container .container .pitch h1 {
-  font-size: 3rem;
-  margin-bottom: 2%;
-}
-@media (min-width:800px) {
-  .home-container .container .pitch h1 {
-    font-size: 4rem;
-  }
-}
-.home-container .container .pitch p {
-  width: 80%;
-  margin: 0 auto;
-}
-@media (min-width:800px) {
-  .home-container .container .pitch p {
-    font-size: 2rem;
-  }
-}
-.home-container .container .about {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
-  padding-bottom: 10%;
+  align-items: flex-end;
 }
-@media (min-width:400px) {
-  .home-container .container .about div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 80%;
-    border-radius: 10px;
-  }
-  .home-container .container .about div h1 {
-    text-align: center;
-  }
-  .home-container .container .about div img {
-    border-radius: 15px;
-    border: 1px solid black;
-    display: block;
-    margin: 2% auto;
-    width: 90%;
-    height: auto;
-  }
-  .home-container .container .about div p {
-    margin: 2% auto;
-    text-align: center;
-    width: 90%;
-  }
+body h1 {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-@media (min-width:400px) and (min-width:800px) {
-  .home-container .container .about div h1 {
-    font-size: 4rem;
-  }
+body p {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-@media (min-width:400px) and (min-width:800px) {
-  .home-container .container .about div p {
-    font-size: 2rem;
-  }
-}
-h1 {
+body header h1 {
   text-align: center;
+}
+body header h2 {
+  text-align: center;
+}
+body .pitch {
+  height: 600px;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/cool-view.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 5px #8ed0ebd7;
+  border-bottom: solid 5px #8ed0ebd7;
+}
+body .about {
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 5px #8ed0ebd7;
+}
+body .service {
+  height: 600px;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/jungle.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 5px #8ed0ebd7;
 }
 .team {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin: 0 auto;
   padding-bottom: 10%;
   width: 80%;
@@ -209,7 +171,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 .team .person h2 {
   text-align: center;
@@ -242,7 +204,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   text-align: center;
 }
 .form form .fields label {
@@ -267,13 +229,23 @@ h1 {
 }
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  color: #2dd1ee;
+  align-items: flex-start;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 nav a {
   text-decoration: none;
+  color: #fff9f9;
   font-size: 2rem;
-  padding: 20px;
+  font-weight: 600;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-color: #4aafd880;
 }
 nav a a:hover {
   -webkit-transform: scale(1.5);

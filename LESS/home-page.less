@@ -1,95 +1,44 @@
-.home-container {
-    .container {
-            header {
-                nav {
-                    margin-bottom: 5%;
-                    text-align: center;
-                    font-size: 1.6rem;
-                    a {
-                            padding: 0 2%;
-                    }//a
-                }//nav
-                h1 {
-                    text-align: center;
-                    font-size: 7rem;
-                        @media @tablet {
-                            font-size: 8rem;
-                        }
-                }//H1
-                h2 {
-                    text-align: center;
-                    font-size: 3.5rem;
-                        @media @tablet {
-                            font-size: 5rem;
-                        }
-                }//H2
-            }//Header
-            .pitch {
-                .flex-box(column, center, center);
-                margin-bottom: 20%;
-                margin-top: 10%;
-                text-align: center;
-                h1 {
-                    font-size: 3rem;
-                    margin-bottom: 2%;
-                    @media @tablet {
-                        font-size: 4rem;
-                    }
-                }//H1
-                p {
-                    width: 80%;
-                    margin: 0 auto;
-                    @media @tablet {
-                        font-size: 2rem;
-                    }
-                }//p
-        }//pitch
-        .about {
-            .flex-box(row, center, center);
-            padding-bottom: 10%;
-
-                div {
-
-                    @media @mobile{
-                    .flex-box(column, center, center);
-                    width: 80%;
-                    border-radius: 10px;
-                        h1 {
-                            text-align: center;
-                                @media @tablet {
-                                    font-size: 4rem;
-                                }
-                        }
-
-                        img {
-                            border-radius: 15px;
-                            border: 1px solid black;
-                            display: block;
-                            margin: 2% auto;
-                            width: 90%;
-                            height: auto;
-                        }
-
-                        p {
-                            margin: 2% auto;
-                            text-align: center;
-                            width: 90%;
-                            @media @tablet {
-                                font-size: 2rem;
-                            }
-
-                        }
-                    }
-                }
-
+body{
+    h1{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    p{
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    header {
+        h1{
+            text-align: center;
         }
-
-     }//Container
-}//Homepage
-
-h1 {
-    text-align: center;
-}
+        h2{
+            text-align: center;
+        }
+    }//Header
+    .pitch{
+        height: 600px;
+        background: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, .5)), url(../images/cool-view.jpg);
+        .parallax(cover, center, fixed);
+        .flex-box(column, center, center);
+        border-top: solid 5px @headercolor;
+        .borderbottom();
+    }//pitch
+    .about {
+        height: 600px;
+        .parallax(cover, center, fixed);
+        .flex-box(column, center, center);
+        .borderbottom();
+    }
+    .service{
+        height: 600px;
+        background: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, .5)), url(../images/jungle.jpg);
+        .parallax(cover, center, fixed);
+        .flex-box(column, center, center);
+        .borderbottom();
+    }
+}//body
 .team {
     .flex-box(column, center, center);
     margin: 0 auto;
@@ -99,7 +48,7 @@ h1 {
 
         .person {
             .flex-box(column, center, center);
-            
+
             h2 {
                 text-align: center;
             }
@@ -121,7 +70,7 @@ h1 {
 
         }//person
 
-    
+
 }//Team Page
 
 .form {
@@ -145,7 +94,7 @@ h1 {
             input[type=text], input[type=email] {
                 width: 70%;
                 margin-bottom: 10%;
-                    
+
             }
 
             #name, #email, #message {
