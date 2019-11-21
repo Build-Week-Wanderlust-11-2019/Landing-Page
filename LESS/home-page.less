@@ -39,50 +39,76 @@ body{
         .borderbottom();
     }
 }//body
+//Home Page Ends
+//Team Page Begins
 .team {
     .flex-box(column, center, center);
-    margin: 0 auto;
+    margin: 10% auto;
     padding-bottom: 10%;
     width: 80%;
     border-radius: 10px;
-
         .person {
             .flex-box(column, center, center);
 
-            h2 {
-                text-align: center;
+            @media @desktop {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
             }
 
-            p {
-                text-align: center;
-                width: 60%;
-                margin: 0 auto;
-                padding-bottom: 7%;
-            }
+                div {
+                    @media @desktop {
+                        .flex-box(column, flex-start, flex-end);
+                        margin-left: 10%;
+                    }
+
+                    h2 {
+                        text-align: center;
+                        @media @desktop {
+                            font-size: 4rem;
+                        }
+                    }
+        
+                    p {
+                        text-align: center;
+                        width: 60%;
+                        margin: 0 auto;
+                        padding-bottom: 7%;
+                            @media @desktop {
+                                font-size: 2rem;
+                            }
+                    }
+                }
 
             img {
                 border-radius: 15px;
                 border: 1px solid black;
                 margin: 2% auto;
-                width: 60%;
+                width: 40%;
                 height: auto;
+
+                    @media @desktop {
+                        margin: 2% 0;
+                    }
             }
 
         }//person
 
 
-}//Team Page
-
+}//Team Page Ends
+// Contact Page Begins
 .form {
+    width: 400px;
+    margin: 0 auto;
+    .flex-box(column, center, center);
     margin-bottom: 10%;
     h2 {
+        margin: 10% 0;
         text-align: center;
         font-size: 4rem;
     }
 
     form {
-        width: 50%;
-        margin: 0 auto;
         .fields {
             .flex-box(column, center, center);
             text-align: center;
@@ -91,14 +117,16 @@ body{
                 font-size: 2rem;
                 margin-bottom: 5%;
             }
+            //possible conflict old code
             input[type=text], input[type=email] {
                 width: 70%;
                 margin-bottom: 10%;
 
             }
-
             #name, #email, #message {
                 border: 1px solid black;
+                width: 70%;
+                margin-bottom: 10%;
             }
         }
 
@@ -106,6 +134,20 @@ body{
             padding: 0;
             list-style: none;
             text-align: center;
+
+                li {
+                    input[type=submit] {
+                        margin-top: 5%;
+                        font-size: 1.5rem;
+                        color: #fff;
+                        font-family: 'Raleway', sans-serif;
+                        padding: 7px;
+                        border-radius: 15px;
+                        background-color: @backgroundcolor;
+                    }
+                }
+
+                
         }
     }
 }

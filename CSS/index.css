@@ -77,6 +77,46 @@ h5 {
   h1 {
     font-size: 6rem;
     font-weight: 600;
+
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+footer {
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.home-container .container header nav {
+  margin: 0 auto;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.home-container .container header nav a {
+  padding: 0 2%;
+}
+.home-container .container header h1 {
+  text-align: center;
+  font-size: 7rem;
+}
+@media (min-width:320px) {
+  .home-container .container header h1 {
+    font-size: 5rem;
   }
 }
 @media (min-width:800px) {
@@ -157,12 +197,17 @@ body .service {
   align-items: center;
   border-bottom: solid 5px #8ed0ebd7;
 }
+@media (min-width:1000px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
 .team {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  align-content: center;
+  margin: 10% auto;
   padding-bottom: 10%;
   width: 80%;
   border-radius: 10px;
@@ -173,32 +218,66 @@ body .service {
   justify-content: center;
   align-items: center;
 }
-.team .person h2 {
+@media (min-width:1000px) {
+  .team .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media (min-width:1000px) {
+  .team .person div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+    margin-left: 10%;
+  }
+}
+.team .person div h2 {
   text-align: center;
 }
-.team .person p {
+@media (min-width:1000px) {
+  .team .person div h2 {
+    font-size: 4rem;
+  }
+}
+.team .person div p {
   text-align: center;
   width: 60%;
   margin: 0 auto;
   padding-bottom: 7%;
 }
+@media (min-width:1000px) {
+  .team .person div p {
+    font-size: 2rem;
+  }
+}
 .team .person img {
   border-radius: 15px;
   border: 1px solid black;
   margin: 2% auto;
-  width: 60%;
+  width: 40%;
   height: auto;
 }
+@media (min-width:1000px) {
+  .team .person img {
+    margin: 2% 0;
+  }
+}
 .form {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   margin-bottom: 10%;
 }
 .form h2 {
+  margin: 10% 0;
   text-align: center;
   font-size: 4rem;
-}
-.form form {
-  width: 50%;
-  margin: 0 auto;
 }
 .form form .fields {
   display: flex;
@@ -212,20 +291,26 @@ body .service {
   font-size: 2rem;
   margin-bottom: 5%;
 }
-.form form .fields input[type=text],
-.form form .fields input[type=email] {
-  width: 70%;
-  margin-bottom: 10%;
-}
 .form form .fields #name,
 .form form .fields #email,
 .form form .fields #message {
   border: 1px solid black;
+  width: 70%;
+  margin-bottom: 10%;
 }
 .form form ul {
   padding: 0;
   list-style: none;
   text-align: center;
+}
+.form form ul li input[type=submit] {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  padding: 7px;
+  border-radius: 15px;
+  background-color: #489c27;
 }
 nav {
   display: flex;
