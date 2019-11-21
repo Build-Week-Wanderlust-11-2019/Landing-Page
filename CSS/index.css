@@ -98,6 +98,7 @@ footer {
   text-align: center;
 }
 .home-container .container header nav {
+  margin: 0 auto;
   margin-bottom: 5%;
   text-align: center;
   font-size: 1.6rem;
@@ -237,15 +238,18 @@ h1 {
   height: auto;
 }
 .form {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   margin-bottom: 10%;
 }
 .form h2 {
+  margin: 10% 0;
   text-align: center;
   font-size: 4rem;
-}
-.form form {
-  width: 50%;
-  margin: 0 auto;
 }
 .form form .fields {
   display: flex;
@@ -259,20 +263,26 @@ h1 {
   font-size: 2rem;
   margin-bottom: 5%;
 }
-.form form .fields input[type=text],
-.form form .fields input[type=email] {
-  width: 70%;
-  margin-bottom: 10%;
-}
 .form form .fields #name,
 .form form .fields #email,
 .form form .fields #message {
   border: 1px solid black;
+  width: 70%;
+  margin-bottom: 10%;
 }
 .form form ul {
   padding: 0;
   list-style: none;
   text-align: center;
+}
+.form form ul li input[type=submit] {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  padding: 7px;
+  border-radius: 15px;
+  background-color: #489c27;
 }
 nav {
   display: flex;
