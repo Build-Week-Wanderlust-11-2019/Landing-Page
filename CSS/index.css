@@ -60,7 +60,6 @@ body {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
   color: rgba(255, 249, 249, 0.856);
-  background-color: #489c27;
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -71,7 +70,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #489c27;
+  color: #108dd5;
   font-weight: 400;
 }
 h1 {
@@ -109,11 +108,6 @@ footer {
   text-align: center;
   font-size: 7rem;
 }
-@media (min-width:320px) {
-  .home-container .container header h1 {
-    font-size: 5rem;
-  }
-}
 @media (min-width:800px) {
   .home-container .container header h1 {
     font-size: 8rem;
@@ -122,11 +116,6 @@ footer {
 .home-container .container header h2 {
   text-align: center;
   font-size: 3.5rem;
-}
-@media (min-width:320px) {
-  .home-container .container header h2 {
-    font-size: 3rem;
-  }
 }
 @media (min-width:800px) {
   .home-container .container header h2 {
@@ -167,41 +156,38 @@ footer {
   align-content: center;
   padding-bottom: 10%;
 }
-.home-container .container .about div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 80%;
-  border-radius: 10px;
-}
-.home-container .container .about div h1 {
-  text-align: center;
-}
-@media (min-width:320px) {
+@media (min-width:400px) {
+  .home-container .container .about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    border-radius: 10px;
+  }
   .home-container .container .about div h1 {
-    font-size: 3rem;
+    text-align: center;
+  }
+  .home-container .container .about div img {
+    border-radius: 15px;
+    border: 1px solid black;
+    display: block;
+    margin: 2% auto;
+    width: 90%;
+    height: auto;
+  }
+  .home-container .container .about div p {
+    margin: 2% auto;
+    text-align: center;
+    width: 90%;
   }
 }
-@media (min-width:800px) {
+@media (min-width:400px) and (min-width:800px) {
   .home-container .container .about div h1 {
     font-size: 4rem;
   }
 }
-.home-container .container .about div img {
-  border-radius: 15px;
-  border: 1px solid black;
-  display: block;
-  margin: 2% auto;
-  width: 90%;
-  height: auto;
-}
-.home-container .container .about div p {
-  margin: 2% auto;
-  text-align: center;
-  width: 90%;
-}
-@media (min-width:800px) {
+@media (min-width:400px) and (min-width:800px) {
   .home-container .container .about div p {
     font-size: 2rem;
   }
