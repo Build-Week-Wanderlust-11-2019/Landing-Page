@@ -2,6 +2,7 @@
     .container {
             header {
                 nav {
+                    margin: 0 auto;
                     margin-bottom: 5%;
                     text-align: center;
                     font-size: 1.6rem;
@@ -12,7 +13,7 @@
                 h1 {
                     text-align: center;
                     font-size: 7rem;
-                        @media @mobile-small {
+                        @media @mobile {
                             font-size: 5rem;
                         }
                         @media @tablet {
@@ -22,7 +23,7 @@
                 h2 {
                     text-align: center;
                     font-size: 3.5rem;
-                        @media @mobile-small {
+                        @media @mobile {
                             font-size: 3rem;
                         }
                         @media @tablet {
@@ -58,7 +59,7 @@
             border-radius: 10px;
                         h1 {
                             text-align: center;
-                                @media @mobile-small {
+                                @media @mobile {
                                     font-size: 3rem;
                                 }
                                 @media @tablet {
@@ -129,15 +130,17 @@ h1 {
 }//Team Page
 
 .form {
+    width: 400px;
+    margin: 0 auto;
+    .flex-box(column, center, center);
     margin-bottom: 10%;
     h2 {
+        margin: 10% 0;
         text-align: center;
         font-size: 4rem;
     }
 
     form {
-        width: 50%;
-        margin: 0 auto;
         .fields {
             .flex-box(column, center, center);
             text-align: center;
@@ -146,14 +149,11 @@ h1 {
                 font-size: 2rem;
                 margin-bottom: 5%;
             }
-            input[type=text], input[type=email] {
-                width: 70%;
-                margin-bottom: 10%;
-                    
-            }
 
             #name, #email, #message {
                 border: 1px solid black;
+                width: 70%;
+                margin-bottom: 10%;
             }
         }
 
@@ -161,6 +161,20 @@ h1 {
             padding: 0;
             list-style: none;
             text-align: center;
+
+                li {
+                    input[type=submit] {
+                        margin-top: 5%;
+                        font-size: 1.5rem;
+                        color: #fff;
+                        font-family: 'Raleway', sans-serif;
+                        padding: 7px;
+                        border-radius: 15px;
+                        background-color: @backgroundcolor;
+                    }
+                }
+
+                
         }
     }
 }
