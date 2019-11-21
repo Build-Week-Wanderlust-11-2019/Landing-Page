@@ -1,12 +1,19 @@
 // Global Nav Bar Design
 nav{
-    display:flex;
-    justify-content: center;
-    color: @linkcolor;
+    .flex-box(row, center, flex-start);
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     a{
         text-decoration: none;
+        color: @linkcolor;
         font-size: 2rem;
-        padding:20px;
+        font-weight: 600;
+        padding:10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 15px;
+        background-color: #4aafd880;
         a:hover{
             -webkit-transform: scale(1.5);
             -ms-transform: scale(1.5);

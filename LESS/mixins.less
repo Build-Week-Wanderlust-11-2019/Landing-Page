@@ -6,8 +6,19 @@
     display: flex;
     flex-direction: @direction;
     justify-content: @justify;
-    align-content: @align;
+    align-items: @align;
 }
+
+.parallax(@size, @position, @attach){
+    background-size: @size;
+    background-position: @position;
+    background-attachment: @attach;
+}
+
+.borderbottom(){
+    border-bottom: solid 5px @headercolor;
+}
+
 a:hover{
     transition: .3s;
     -webkit-transform: scale(1.5);

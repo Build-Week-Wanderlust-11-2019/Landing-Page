@@ -1,116 +1,55 @@
-.home-container {
-    .container {
-            header {
-                nav {
-                    margin: 0 auto;
-                    margin-bottom: 5%;
-                    text-align: center;
-                    font-size: 1.6rem;
-                    a {
-                            padding: 0 2%;
-                    }//a
-                }//nav
-                h1 {
-                    text-align: center;
-                    font-size: 7rem;
-                        @media @mobile {
-                            font-size: 5rem;
-                        }
-                        @media @tablet {
-                            font-size: 8rem;
-                        }
-                }//H1
-                h2 {
-                    text-align: center;
-                    font-size: 3.5rem;
-                        @media @mobile {
-                            font-size: 3rem;
-                        }
-                        @media @tablet {
-                            font-size: 5rem;
-                        }
-                }//H2
-            }//Header
-            .pitch {
-                .flex-box(column, center, center);
-                margin-bottom: 20%;
-                margin-top: 10%;
-                text-align: center;
-                h1 {
-                    font-size: 3rem;
-                    margin-bottom: 2%;
-                    @media @tablet {
-                        font-size: 4rem;
-                    }
-                }//H1
-                p {
-                    width: 80%;
-                    margin: 0 auto;
-                    @media @tablet {
-                        font-size: 2rem;
-                    }
-                }//p
-        }//pitch
-        .about {
-            margin: 0 auto;
-            padding-bottom: 10%;
-            .flex-box(column, center, center);
-            width: 80%;
-            border-radius: 10px;
-                        h1 {
-                            text-align: center;
-                                @media @mobile {
-                                    font-size: 3rem;
-                                }
-                                @media @tablet {
-                                    font-size: 4rem;
-                                }
-                        }
-
-                        img {
-                            border-radius: 15px;
-                            border: 1px solid black;
-                            display: block;
-                            margin: 2% auto;
-                            width: 90%;
-                            height: auto;
-                        }
-
-                        p {
-                            margin: 2% auto;
-                            text-align: center;
-                            width: 90%;
-                            @media @tablet {
-                                font-size: 2rem;
-                            }
-
-                        }
-                
-
-        }
-
-     }//Container
-}//Homepage
-
-h1 {
-    margin-top: 5%;
-    text-align: center;
-
-    @media @desktop {
-        font-size: 6rem;
+body{
+    h1{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
-}
+    p{
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    header {
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    }//Header
+    .pitch{
+        height: 600px;
+        background: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, .5)), url(../images/cool-view.jpg);
+        .parallax(cover, center, fixed);
+        .flex-box(column, center, center);
+        border-top: solid 5px @headercolor;
+        .borderbottom();
+    }//pitch
+    .about {
+        height: 600px;
+        .parallax(cover, center, fixed);
+        .flex-box(column, center, center);
+        .borderbottom();
+    }
+    .service{
+        height: 600px;
+        background: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, .5)), url(../images/jungle.jpg);
+        .parallax(cover, center, fixed);
+        .flex-box(column, center, center);
+        .borderbottom();
+    }
+}//body
+//Home Page Ends
+//Team Page Begins
 .team {
     .flex-box(column, center, center);
     margin: 10% auto;
     padding-bottom: 10%;
     width: 80%;
     border-radius: 10px;
-
-
-
         .person {
             .flex-box(column, center, center);
+
             @media @desktop {
                 display: flex;
                 flex-direction: row;
@@ -155,9 +94,9 @@ h1 {
 
         }//person
 
-    
-}//Team Page
 
+}//Team Page Ends
+// Contact Page Begins
 .form {
     width: 400px;
     margin: 0 auto;
@@ -178,7 +117,12 @@ h1 {
                 font-size: 2rem;
                 margin-bottom: 5%;
             }
+            //possible conflict old code
+            input[type=text], input[type=email] {
+                width: 70%;
+                margin-bottom: 10%;
 
+            }
             #name, #email, #message {
                 border: 1px solid black;
                 width: 70%;
