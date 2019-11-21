@@ -47,54 +47,39 @@ body{
     padding-bottom: 10%;
     width: 80%;
     border-radius: 10px;
-        .person {
-            .flex-box(column, center, center);
-
+    .person {
+        .flex-box(column, center, center);
+        @media @desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }//desktop flex
+        div {
             @media @desktop {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-            }
-
-                div {
-                    @media @desktop {
-                        .flex-box(column, flex-start, flex-end);
-                        margin-left: 10%;
-                    }
-
-                    h2 {
-                        width: 70%;
-                        margin: 2% auto;
-                        @media @desktop {
-                            font-size: 4rem;
-                        }
-                    }
-
-                    p {
-                        width: 70%;
-                        margin: 2% auto;
-                        padding-bottom: 7%;
-                            @media @desktop {
-                                font-size: 2rem;
-                            }
-                    }
+                .flex-box(column, flex-start, flex-end);
+                margin-left: 10%;
+            }//desktop flex
+            h2 {
+                width: 70%;
+                margin: 2% auto;
                 }
-
+            }//h2
+            p {
+                width: 70%;
+                margin: 2% auto;
+                padding-bottom: 7%;
+            }//p
             img {
                 border-radius: 15px;
                 border: 1px solid black;
                 margin: 2% auto;
-                width: 30%;
+                width: 25%;
                 height: auto;
-
                     @media @desktop {
                         margin: 2% 0;
-                    }
-            }
-
-        }//person
-
-
+                    }//desktop margin
+            }//img
+    }//person
 }//Team Page Ends
 // Contact Page Begins
 .form {
