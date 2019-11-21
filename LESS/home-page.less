@@ -93,35 +93,64 @@
 }//Homepage
 
 h1 {
+    margin-top: 5%;
     text-align: center;
+
+    @media @desktop {
+        font-size: 6rem;
+    }
 }
 .team {
     .flex-box(column, center, center);
-    margin: 0 auto;
+    margin: 10% auto;
     padding-bottom: 10%;
     width: 80%;
     border-radius: 10px;
 
+
+
         .person {
             .flex-box(column, center, center);
-            
-            h2 {
-                text-align: center;
+            @media @desktop {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
             }
 
-            p {
-                text-align: center;
-                width: 60%;
-                margin: 0 auto;
-                padding-bottom: 7%;
-            }
+                div {
+                    @media @desktop {
+                        .flex-box(column, flex-start, flex-end);
+                        margin-left: 10%;
+                    }
+
+                    h2 {
+                        text-align: center;
+                        @media @desktop {
+                            font-size: 4rem;
+                        }
+                    }
+        
+                    p {
+                        text-align: center;
+                        width: 60%;
+                        margin: 0 auto;
+                        padding-bottom: 7%;
+                            @media @desktop {
+                                font-size: 2rem;
+                            }
+                    }
+                }
 
             img {
                 border-radius: 15px;
                 border: 1px solid black;
                 margin: 2% auto;
-                width: 60%;
+                width: 40%;
                 height: auto;
+
+                    @media @desktop {
+                        margin: 2% 0;
+                    }
             }
 
         }//person

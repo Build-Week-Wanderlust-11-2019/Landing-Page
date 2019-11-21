@@ -203,14 +203,20 @@ footer {
   }
 }
 h1 {
+  margin-top: 5%;
   text-align: center;
+}
+@media (min-width:1000px) {
+  h1 {
+    font-size: 6rem;
+  }
 }
 .team {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 0 auto;
+  margin: 10% auto;
   padding-bottom: 10%;
   width: 80%;
   border-radius: 10px;
@@ -221,21 +227,52 @@ h1 {
   justify-content: center;
   align-content: center;
 }
-.team .person h2 {
+@media (min-width:1000px) {
+  .team .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media (min-width:1000px) {
+  .team .person div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+    margin-left: 10%;
+  }
+}
+.team .person div h2 {
   text-align: center;
 }
-.team .person p {
+@media (min-width:1000px) {
+  .team .person div h2 {
+    font-size: 4rem;
+  }
+}
+.team .person div p {
   text-align: center;
   width: 60%;
   margin: 0 auto;
   padding-bottom: 7%;
 }
+@media (min-width:1000px) {
+  .team .person div p {
+    font-size: 2rem;
+  }
+}
 .team .person img {
   border-radius: 15px;
   border: 1px solid black;
   margin: 2% auto;
-  width: 60%;
+  width: 40%;
   height: auto;
+}
+@media (min-width:1000px) {
+  .team .person img {
+    margin: 2% 0;
+  }
 }
 .form {
   width: 400px;
